@@ -8,22 +8,25 @@ First, ensure you have npm initialized in your project directory:
 
 sh
 
-> npm init -y
+```
+npm init -y
+```
 
 # Step 2: Install Dependencies
 
 Install the necessary runtime dependencies:
 
 sh
-
-> npm install express sequelize sqlite3
-
+```
+npm install express sequelize sqlite3
+```
 Install the necessary development dependencies:
 
 sh
 
-> npm install --save-dev typescript @types/express @types/node @types/sequelize ts-node-dev
-
+```
+npm install --save-dev typescript @types/express @types/node @types/sequelize ts-node-dev
+```
 
 ## To start the application, first compile the TypeScript code to JavaScript:
 
@@ -35,15 +38,18 @@ Then run the compiled JavaScript code:
 
 sh
 Copy code
-> node dist/server.js
+```
+node dist/server.js
+```
 
 Alternatively, you can use ts-node-dev for easier development, which automatically restarts the server when code changes:
 
 sh
 Copy code
 
-> npx ts-node-dev server.ts
-
+```
+npx ts-node-dev server.ts
+```
 # Step 3: Update package.json Scripts
 To simplify running the application, update the scripts section in your package.json:
 ```
